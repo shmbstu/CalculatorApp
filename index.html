@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="testApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body ng-controller="calculatorController as cc">
+    
+    <script src="Scripts/angular.js"></script>
+    <script src="app.js"></script>
+    <span>Number1</span>
+    <input type="text" ng-model="cc.number1" />
+    <br />
+    <span>Number2</span>
+    <input type="text" ng-model="cc.number2" />
+    <br />
+    <button ng-click="cc.AddNumber()">+</button>
+    <button ng-click="cc.Subtract()">-</button>
+    <button ng-click="cc.Divide()">%</button>
+    <button ng-click="cc.Multi()">*</button>
+
+    <span>result: {{cc.result}}</span>
+    
+</body>
+</html>
